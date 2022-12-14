@@ -13,3 +13,12 @@ clones the remote repo into dirname.
   git merge dev
   git push
 
+3. **how to rename the branch remotely as well as locally**
+
+   > to rename branch locally use  
+   git branch -m oldname newname  
+
+   >to rename branch remotely
+    git branch -m oldname newname
+    git push origin --delete oldname
+    git push origin -u newname
